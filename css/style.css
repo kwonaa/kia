@@ -2,19 +2,42 @@
     margin: 0;
     padding: 0;
     font-family: "Nanum Gothic", sans-serif;
+    box-sizing: border-box;
 }
 ul{list-style: none;}
 li{list-style: none;}
 
 /* Add a dark background color with a little bit see-through */
 .navbar {
+    padding-top: 10px;
     margin-bottom: 0;
     background-color: transparent;
     border: 0;
     font-size: 15px !important;
     font-weight: bold;
     /* letter-spacing: 0px; */
+    z-index: 10;
 }
+
+.navbar .nav-icon{
+    display: none;
+}
+
+.navbar-header img{
+    position: relative;
+    left: 430px;
+    margin-top: 3px;
+}
+
+.navbar #myNavbar > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar #myNavbar > ul .nav-icon{
+    display: none;
+}
+
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
@@ -44,6 +67,7 @@ li{list-style: none;}
     background-color: transparent;
 }
 
+
 /* Dropdown links */
 .dropdown-menu li a {
     color: #000 !important;
@@ -51,16 +75,34 @@ li{list-style: none;}
 
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: rgb(0, 0, 0) !important;
 }
 
 
 
-/*carousel (화면 상단 이미지 슬라이드)----------------------------------------------------------*/
 
-/* #myCarousel, .carousel-inner{
-    height: 800px;
-} */
+
+
+
+/*carousel (화면 상단 이미지 슬라이드)----------------------------------------------------------*/
+#myCarousel{
+    position: relative;
+}
+#myCarousel ol{
+    position: absolute;
+    bottom : 50px;
+}
+
+#myCarousel, .carousel-inner{
+    height: auto;
+    position: relative;
+    top: -100px;
+}
+#myCarousel, .carousel-indicators li{
+    position: relative;
+    top: -90px;
+}
+
 
 #myCarousel .carousel-inner .item img:nth-child(1){ /*PC 보이게*/
     display: block;
@@ -72,6 +114,7 @@ li{list-style: none;}
 .carousel-caption{ /*문구*/
     position: absolute;
     left: 30px;
+    bottom: 70px;
     text-align: left;
     line-height: 1.5;
     animation-name: ani;
@@ -95,7 +138,7 @@ li{list-style: none;}
 #bestkia h3{/*제목 Best Kia*/
     font-weight: bold;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: -130px;
     margin-bottom: 50px;
 }
 
@@ -299,22 +342,90 @@ li{list-style: none;}
 #footer1{
     background-color: #05141F;
     color: white;
+    padding: 40px;
 }
 
-#footer1 .col-sm-6 ul{
-    position: absolute;
-    right: 0;
+#footer1 .col-sm-12{
+    padding-bottom: 30px;
+    right: 200px;
 }
 
-#footer1 .col-sm-6 li{ /*sns 아이콘*/
-    display: inline;
-    /*float left 도 써보기 3으로 해서 */
+#footer1 .row2 .col-sm-3:nth-child(1){
+    right: 215px;
 }
 
-#footer1 .col-sm-6 li a{ /*sns 아이콘*/
-    display: inline-block;
+#footer1 .row2 .col-sm-3:nth-child(1) ul li{
+    padding-bottom: 20px;
+}
+
+#footer1 .row2 .col-sm-3:nth-child(1) ul li:nth-child(6){
+    padding-top: 30px;
+}
+
+#footer1 .row2 .col-sm-3:nth-child(2) ul li{
+    display: block;
+    color: #79837D;
+    padding-bottom: 5px;
+}
+
+
+#footer1 .row2 .col-sm-6 ul{ /*sns 아이콘*/
+    float: left;
+    position: relative;
+    left: 500px;
+}
+
+#footer1 .row2 .col-sm-6 ul li{ /*sns 아이콘*/
+    float: left;
     padding: 10px;
+
 }
+
+#footer1 .row2 .global{
+    position: relative;
+    bottom: -200px;
+    right: -250px;
+    margin-bottom: -50px;
+}
+
+#footer1 .row2 .global div{
+    float: left;
+    width: 50px;
+    position: relative;
+}
+
+#footer1 .row2 .global img{
+    padding-right: 5px;
+}
+
+#footer1 .row2 .global .btn{
+    width: 200px;
+    background: #010E18;
+    border: none;
+    color: white;
+}
+
+
+#footer1 .row2 div.dropup{
+    padding-right: 30px;
+    font-size: 14px ;
+    position: relative;
+}
+
+#footer1 .row2 div.dropup ul {
+    position: absolute;
+    left: 0;
+}
+
+#footer1 .row2 div.dropup ul li:nth-child(6){
+    padding-right: 30px;
+}
+
+#footer1 .row2 div.dropup ul li:hover a{
+    background-color: transparent !important;
+}
+
+
 
 
 #footer2{
@@ -324,20 +435,38 @@ li{list-style: none;}
 
 #footer2 .col-sm-6{
     float: right;
+    width: 700px;
 }
 
 #footer2 .col-sm-6:first-child li{
     float: left;
-    padding: 5px;
+    padding: 10px;
+    position: relative;
+    left: 300px;
+    margin-top: 10px;
+}
+
+#footer2 .col-sm-6:nth-child(2){
+    right: 670px;
+    bottom: 30px;
+}
+
+#footer2 .row2{
+    width: 1500px;
+    position: relative;
+    right: 200px;
+    margin-bottom: 100px;
 }
 
 #footer2 .col-sm-2{
     font-size: 11px;
-
+    line-height: 2;
 }
 
 #footer2 .col-sm-2 img{
     float: left;
+    padding-right: 5px;
+    margin-bottom: 30px;
 }
 
 #collapse{
@@ -352,6 +481,80 @@ li{list-style: none;}
 
 /* 미디어 쿼리 (반응형 웹) ---------------------------------------------------------------------*/
 @media screen and (max-width:767px){
+    .navbar{
+        margin-top: -10px;
+    }
+
+    .navbar .nav-icon{
+        display: block;
+        position: absolute;
+        left: 350px;
+        top: 25px;
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar .nav-icon a{
+        float: left;
+        /* display: inline-block; */
+        position: relative;
+        padding-right: 15px;
+    }
+
+    .navbar .icon-bar{
+        background-color: white;
+    }
+
+    .navbar #nav-text{
+        display: none;
+    }
+
+    .navbar #myNavbar > ul .nav-icon{
+        display: block;
+    }
+    
+    .navbar-header img{
+        position: relative;
+        left: 10px;
+        top: -10px;
+        margin-top: 20px;
+        width: 50px;
+    }
+
+    
+    /* Add a gray color to all navbar links */
+    .navbar li a, .navbar .navbar-brand {
+        color: #ffffff !important;
+    }
+    
+    /* On hover, the links will turn white */
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+    
+    /* The active link */
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color:#29292c !important;
+        opacity: 1;
+    }
+    
+    /* Remove border color from the collapsible button */
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    
+    /* Dropdown */
+    .open .dropdown-toggle {
+        color: #3f3f3f ;
+        background-color: transparent;
+    }
+    
+    /* Dropdown links */
+    .dropdown-menu li a {
+        color: #000 !important;
+    }
+    
+
 
     /*carousel (화면 상단 이미지 슬라이드)----------------------------------------------------------*/
     #myCarousel .carousel-inner .item img:nth-child(1){ /*PC 안 보이게*/
@@ -378,12 +581,11 @@ li{list-style: none;}
     }
 
 
-
     /*bestkia (toggle tab)--------------------------------------------------------------*/
     #bestkia h3{/*제목 Best Kia*/
         font-weight: bold;
         font-size: 24px;
-        margin-top: 40px;
+        margin-top: -150px;
         margin-bottom: 40px;
     }
 
@@ -454,15 +656,6 @@ li{list-style: none;}
         margin-bottom: 40px;
     }
 
-    #news .col-sm-6{ /*자동차 이미지=================================*/
-        /* float: right;
-        display: block;
-        position: relative;
-        object-fit: cover;
-        height: 100%;
-        width: 100%; */
-    }
-
     #news .col-sm-6 img:nth-child(1){
         display: none;
     }
@@ -470,10 +663,17 @@ li{list-style: none;}
         display: block;
     }
 
+    #news .col-sm-6:nth-child(1){
+        height: auto;
+        width: 100%;
+    }
+
     #news .col-sm-6:nth-child(2){ /*왼쪽 텍스트 박스*/
         background: #697278;
         color: white;
-        padding: 60px;
+        height: 200px;
+        width: 100%;
+        padding: 20px;
     }
 
     #news .col-sm-6:nth-child(2) h5,h4{ /*왼쪽 텍스트 박스 제목들*/
@@ -481,70 +681,57 @@ li{list-style: none;}
     }
 
     #news .col-sm-6 h5{ /*제목*/
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #news .col-sm-6 h4{ /*소제목*/
-        font-size: 22px;
+        font-size: 13px;
         line-height: 2.5;
-        padding-bottom: 50px;
-    }
-
-    #news .col-sm-6:nth-child(2) p{ /*내용*/
-        font-size: 14px;
-        color: #d4d4d4;
-        padding-bottom: 70px;
-        line-height: 2;
-    }
-
-    #news .col-sm-4{ /*하단 뉴스*/
-        padding-top: 50px;
-        padding-bottom: 150px;
-    }
-
-    #news .col-sm-4 h4{ /*하단 뉴스 제목*/
-        color: #697278;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    #news .col-sm-4 p{ /*하단 뉴스 내용*/
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-
-
-
-
-
-    
-
-
-
-    #news .col-sm-6:nth-child(1){
-        height: 300px;
-        width: 100%;
-    }
-    #news .col-sm-6:nth-child(2){
-        height: 200px;
-        width: 100%;
-        padding: 20px;
+        padding-bottom: 40px;
     }
     
     #news .col-sm-6:nth-child(2) p{
         display: none;
     }
-
-    #news .col-sm-6 h4{ /*소제목*/
-        padding-bottom: 20px;
-    }
-
+    
     #news .col-sm-4{
         padding-top: 30px;
         padding-bottom: 30px;;
     }
     
+    #news .col-sm-4 h4{ /*하단 뉴스 제목*/
+        color: #697278;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #news .col-sm-4 p{ /*하단 뉴스 내용*/
+        font-weight: bold;
+        font-size: 13px;
+        color: #000;
+    }
+
+
+    
+
+
+    /*footer -----------------------------------------------------------------*/
+    #footer1 .col-sm-12{
+        position: absolute;
+        left: 0px;
+    }
+
+    #footer1 .col-sm-12 img{
+        width: 70px;
+    }
+
+    #footer1 .row2 .col-sm-3:nth-child(1){
+        position: absolute;
+        left: 00px;
+        margin-top: 60px;
+    }
+
+
     #footer1 .col-sm-3:nth-child(2){
         display: none;
     }
@@ -556,6 +743,9 @@ li{list-style: none;}
 
     #collapse{
         display: block;
+        margin-top: 270px;
+        margin-left: -30px;
+        margin-right: -30px;
     }
 
     #collapse .collapsible {
@@ -570,10 +760,11 @@ li{list-style: none;}
         font-size: 15px;
         border-bottom: solid #313131 0.1px;
     }
-      
-    /* #collapse .active, #collapse .collapsible:hover {
-        background-color: #555;
-    } */
+
+    #collapse .collapsible:nth-child(1) {
+        border-top: solid #313131 0.1px;
+        margin-top: 15px;
+    }
     
     #collapse .collapsible:after {
         content: '\002B';
@@ -599,9 +790,79 @@ li{list-style: none;}
         background: #05141F;
     }
 
-    #footer2 .container .row:nth-child(3){
+    #footer2 .row{
+        font-size: 10px;
+        position: relative;
+        right: 360px;
+        margin-bottom: 50px;
+    }
+
+    #footer2 .col-sm-6:nth-child(1){
+        float: right;
+        width: 320px;
+        font-size: 12px;
+    }
+    
+    #footer2 .col-sm-6:first-child li{
+        float: left;
+        padding: 10px;
+        position: relative;
+        left: 300px;
+        margin-top: 10px;
+    }
+
+    #footer2 .row #copy{
+        left: 480px;
+        top: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    #footer2 .row2{
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+    
     
 }
 
