@@ -12,16 +12,22 @@ ul,li{
 /*nav ================================================================================*/
 .navbar {
     background-color: transparent;
+    position: relative;
     border: none;
     font-size: 16px;
     font-weight: bold;
-    margin: 20px;
 }
 
 .navbar-fixed-top{
     position: absolute;
 }
 
+
+/* .navbar .navbar-left{
+} */
+
+/* .navbar .navbar-right{
+} */
 
 /*모바일ver. 오른쪽 네비 아이콘*/
 .navbar .nav-icon{
@@ -30,10 +36,8 @@ ul,li{
 
 /*기아 로고*/
 .navbar-header #nav-logo img{
-    display: block;
-    position: relative;
-    top: -15px;
-    left: 50%;
+    position: absolute;
+    transform: translate(100px, -15px);
 }
 
 /*nav 텍스트 컬러*/
@@ -59,10 +63,12 @@ ul,li{
 
 
 /*carousel (화면 상단 이미지 슬라이드)==========================================================================*/
+/* #myCarousel{
+} */
 
 /* 이미지+문구+버튼+페이지넘버링*/
 #myCarousel .item{
-    height: 100%
+    height: 100%;
 }
 
 /*페이지넘버링*/
@@ -519,8 +525,8 @@ ul,li{
     
     .navbar-header #nav-logo img{
         position: relative;
-        left: 20px;
-        top: -5px;
+        left: -70px;
+        top: 10px;
         width: 60px;
     }
     
