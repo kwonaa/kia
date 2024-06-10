@@ -37,7 +37,7 @@ ul,li{
 /*기아 로고*/
 .navbar-header #nav-logo img{
     position: absolute;
-    transform: translate(100px, -15px);
+    transform: translate(420px, -15px);
 }
 
 /*nav 텍스트 컬러*/
@@ -525,7 +525,7 @@ ul,li{
     
     .navbar-header #nav-logo img{
         position: relative;
-        left: -70px;
+        right: 400px;
         top: 10px;
         width: 60px;
     }
