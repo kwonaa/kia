@@ -14,6 +14,21 @@
     <link href="css/style.css"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function(){
+            // 뉴스
+            $(window).scroll(function(e){
+                console.log($(window).scrollTop());
+                if($(window).scrollTop()>2200){
+                    $("#news .col-sm-4").addClass("animate__animated animate__fadeInUp") // 추가할 클래스
+                }
+            });
+        });
+
+    </script>
+
 </head>
 
 <body>
