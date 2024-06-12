@@ -46,6 +46,9 @@ ul,li{
 }
 
 /*언어 드롭다운*/
+.dropdown-menu{
+    background-color: #E7E7E7 !important;
+}
 .dropdown-menu li a {
     color: #000 !important;
 }
