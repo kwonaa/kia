@@ -748,7 +748,7 @@ ul,li{
         color: white;
         cursor: pointer;
         padding: 18px;
-        width: 150%;
+        width: 160%;
         border: none;
         text-align: left;
         outline: none;
@@ -795,7 +795,7 @@ ul,li{
     #footer2 .row{
         font-size: 10px;
         position: relative;
-        right: 360px;
+        right: 320px;
         margin-bottom: 40px;
         margin-top: 30px;
     }
@@ -806,7 +806,6 @@ ul,li{
         font-size: 12px;
         position: relative;
         left: 40px;
-
     }
     
     #footer2 .col-sm-8 li{
@@ -818,7 +817,7 @@ ul,li{
     /*저작권*/
     #footer2 .col-sm-4{
         position: relative;
-        left: 430px;
+        left: 370px;
         top: 20px;
         width: 150%;
         text-align: center;
