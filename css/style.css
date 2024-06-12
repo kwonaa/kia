@@ -97,9 +97,9 @@ ul,li{
     bottom: 40px;
     text-align: left;
     line-height: 1.5;
-    animation-name: ani;
+    /* animation-name: ani;
     animation-duration: 0.7s;
-    animation-delay: 0.4s;
+    animation-delay: 0.4s; */
 }
 
 /*자동차 이름*/
@@ -337,6 +337,7 @@ ul,li{
 #news .col-sm-4{ /*하단 뉴스*/
     padding-top: 50px;
     padding-bottom: 150px;
+    opacity: 0;
 }
 
 #news .col-sm-4 h4{ /*하단 뉴스 제목*/
@@ -477,7 +478,7 @@ ul,li{
 #footer2 .col-sm-2{
     font-size: 11px;
     line-height: 2;
-    width: 24%;
+    width: 250px
 }
 
 #footer2 .col-sm-2 img{
