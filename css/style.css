@@ -46,9 +46,7 @@ ul,li{
 }
 
 /*언어 드롭다운*/
-.dropdown-menu{
-    background-color: #E7E7E7 !important;
-}
+
 .dropdown-menu li a {
     color: #000 !important;
 }
@@ -509,6 +507,11 @@ ul,li{
     
     .navbar #nav-text{
         display: none;
+    }
+
+    /*언어 드롭다운*/
+    .dropdown-menu{
+        background-color: #E7E7E7 !important;
     }
 
     /*모바일ver. 오른쪽 네비 아이콘*/
