@@ -81,7 +81,6 @@ ul,li{
 #myCarousel .carousel-inner .item img:nth-child(1){ 
     display: block;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
 }
@@ -137,8 +136,6 @@ ul,li{
 #bestkia .nav-tabs{/*최근출시, 연비 효율 등 탭*/
     margin-top: 50px;
     margin-bottom: 50px;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -789,6 +786,7 @@ ul,li{
         transition: max-height 0.2s ease-out;
         background-color: #f1f1f1;
         border-radius: 7px;
+        margin-bottom: 20px;
     }
 
 
